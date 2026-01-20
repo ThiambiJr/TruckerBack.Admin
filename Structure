@@ -1,0 +1,10 @@
+TruckerBack.Admin
+│
+├── Pages
+│   ├── Dashboard.razor
+│   ├── Trucks.razor
+│   └── Breakdowns.razor
+│
+├── Services
+│   ├── ApiService.cs
+│   └── TrackingHubService.cs

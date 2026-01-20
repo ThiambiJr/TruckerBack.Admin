@@ -1,0 +1,15 @@
+@inject TrackingHubService Tracking
+
+<h3>Live Fleet</h3>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await Tracking.Start();
+        Tracking.Hub.On<string, double, double>("ReceiveLocation",
+            (id, lat, lng) =>
+            {
+                // Update map pins
+            });
+    }
+}
